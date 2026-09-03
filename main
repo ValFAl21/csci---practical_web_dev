@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Solar System</title>
+  </head>
+  <bod>
+    <h1>Welcome to our solar system</h1>
+    <a href="the-sun.html">Visit the sun</a>
+
+  <button onclick="alert('Boom!');">
+  DO NOT PRESS
+  </button>
+</body>
+</html>
