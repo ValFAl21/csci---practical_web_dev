@@ -1,0 +1,75 @@
+/* THE MOON PAGE */
+body {
+    background-image: url('solarpictures/themoon_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* MAIN TITLE */
+h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+/* NAVIGATION LINKS */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Link hover effect */
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* INFORMATION SECTION */
+h2 {
+    margin-top: 50px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkred;
+    color: white;
+}
