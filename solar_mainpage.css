@@ -1,5 +1,4 @@
 /* MAIN PAGE CSS PAGE */
-
 body {
     background-image: url('solarpictures/solarsystem_background.jpg');
     background-repeat: no-repeat;
@@ -10,81 +9,295 @@ body {
     margin: 0;
 
     font-family: Arial, sans-serif;
-    color: white;
+    color: palevioletred;
     text-align: center;
 }
 
-
-/* =========================
-   MAIN TITLE
-   ========================= */
-
+/* MAIN TITLE */
 h1 {
     font-size: 50px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
 
-
-/* =========================
-   LINKS
-   ========================= */
-
+/* LINKS */
 a {
     display: inline-block;
     margin: 10px;
     padding: 12px 20px;
-
     color: white;
     text-decoration: none;
     font-size: 18px;
-
     border: 2px solid white;
     border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-
 /* Change link appearance when mouse is over it */
-
 a:hover {
     background-color: white;
     color: black;
 }
 
-
-/* =========================
-   INFORMATION SECTION
-   ========================= */
-
+/* INFORMATION SECTION */
 h2 {
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+
 }
 
 p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+}
+/* SOLAR SYSTEM ANIMATION */
+
+.solar-system {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    max-width: 95vw;
+    margin: 30px auto;
 }
 
+/* SUN */
+.sun {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: orange;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 35px yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
 
-/* =========================
-   BUTTON
-   ========================= */
+/* ORBIT PATHS */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(0, 0, 0);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit 10s linear infinite;
+    animation-play-state: paused;
+}
 
+/* DIFFERENT ORBIT SIZES AND SPEEDS */
+.orbit-mercury {
+    width: 18%;
+    height: 18%;
+    animation-duration: 3s;
+}
+
+.orbit-venus {
+    width: 28%;
+    height: 28%;
+    animation-duration: 5s;
+}
+
+.orbit-earth {
+    width: 38%;
+    height: 38%;
+    animation-duration: 7s;
+}
+
+.orbit-mars {
+    width: 48%;
+    height: 48%;
+    animation-duration: 9s;
+}
+
+.orbit-jupiter {
+    width: 58%;
+    height: 58%;
+    animation-duration: 12s;
+}
+
+.orbit-saturn {
+    width: 68%;
+    height: 68%;
+    animation-duration: 15s;
+}
+
+.orbit-uranus {
+    width: 78%;
+    height: 78%;
+    animation-duration: 18s;
+}
+
+/* PLANETS */
+.planet {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* PLANET COLORS AND SIZES */
+.mercury {
+    width: 13px;
+    height: 13px;
+    background: gray;
+}
+
+.venus {
+    width: 19px;
+    height: 19px;
+    background: goldenrod;
+}
+
+.earth {
+    width: 22px;
+    height: 22px;
+    background: #168de0;
+    position: absolute;
+    top: -11px;
+}
+
+.mars {
+    width: 17px;
+    height: 17px;
+    background: orangered;
+}
+
+.jupiter {
+    width: 35px;
+    height: 35px;
+    background: #c88b55;
+}
+
+.saturn {
+    width: 30px;
+    height: 30px;
+    background: #e5c58a;
+}
+
+.uranus {
+    width: 25px;
+    height: 25px;
+    background: lightblue;
+}
+
+/* SATURN'S RINGS */
+.saturn::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 12px;
+    border: 3px solid #d8c08c;
+    border-radius: 50%;
+    top: 5px;
+    left: -10px;
+}
+
+/* MOON ORBITING EARTH */
+.moon-orbit {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed white;
+    border-radius: 50%;
+    animation: orbit 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.moon {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: lightgray;
+    border-radius: 50%;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* START AND STOP ANIMATION */
+.solar-system.running .orbit,
+.solar-system.running .moon-orbit {
+    animation-play-state: running;
+}
+
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* ANIMATION BUTTONS */
+#startButton,
+#stopButton {
+    margin: 10px;
+    padding: 12px 22px;
+    background-color: silver;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#startButton:hover,
+#stopButton:hover {
+    background-color: #42a5f5;
+}
+
+/* BUTTON */
 button {
     margin-top: 30px;
     padding: 12px 20px;
-
     font-size: 16px;
     cursor: pointer;
-
     border: none;
     border-radius: 8px;
 }
 
-
-/* Button changes when mouse is over it */
-
+/* Button hover effect */
 button:hover {
     background-color: darkred;
     color: white;
+}
+
+/* STACKED SOLAR SYSTEM IMAGES */
+.planet-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* IMAGE SIZING */
+.planet-images img {
+    width: 100%;
+    height: 220px;
+    box-sizing: border-box;
+    object-fit: contain;
+    display: block;
+}
+
+/* MOBILE SCREEN LAYOUT */
+@media (max-width: 700px) {
+    .planet-images img {
+        height: 220px;
+    }
 }
