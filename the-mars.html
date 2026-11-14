@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>The Mars Planet</title>
+  <link rel="stylesheet" href="the-marspage.css">
+  <script src="mars-calculator.js" defer></script>
+
+  </head>
+  <body>
+    <h1>Welcome To The Mars Planet</h1>
+    <a href="solar_mainpage.html">Visit Our Solar System</a>
+    <a href="the-sun.html">Visit The Sun</a>
+    <a href="the-moon.html">Visit The Moon</a>
+    <a href="the-mercury.html">Visit The Mercury Planet</a>
+    <a href="the-venus.html">Visit The Venus Planet</a>
+    <a href="the-earth.html">Back The Earth Planet</a>
+    <a href="the-jupiter.html">Visit The Jupiter Planet</a>
+    <a href="the-saturn.html">Visit The Saturn Planet</a>
+    <a href="the-uranus.html">Visit The Uranus Planet</a>
+
+    <button onclick="alert('Boom!');">
+        DO NOT PRESS
+    </button>
+
+    <!-- THE INFORMATION SECTION -->
+    <h2>Here Is Some Information About The Mars Planet</h2>
+    <p> Mars is the fourth planet from the Sun and is often called the "Red Planet" because of its reddish appearance. Its color comes from iron minerals in its soil and rocks that have rusted over time. Mars is a rocky planet with mountains, valleys, craters, and ancient river channels. It has a thin atmosphere made mostly of carbon dioxide and two small natural moons called Phobos and Deimos. Mars takes approximately 687 Earth days to complete one orbit around the Sun. </p>
+
+    <!-- MARS IMAGES -->
+    <div class="planet-images">
+      <img src="solarpictures/mars-image1.jpg"
+          alt="Mars planet surface">
+
+      <img src="solarpictures/mars-image2.jpg"
+          alt="Mars and its layers">
+    </div>
+    
+    <!-- MARS WEIGHT CALCULATOR -->
+    <div class="calculator">
+    <h2>What Would You Weigh on Mars?</h2>
+    <p>Enter your weight below to see how much you would weigh on Mars!</p>
+    <label for="earthWeight">Enter Your Weight on Earth (lbs):</label>
+    <input type="number" id="earthWeight" placeholder="Enter your weight" min="0.1" step="any">
+
+    <button id="calculateButton">Calculate My Mars Weight!</button>
+    <p id="result"></p>
+</div>
+
+    <!-- MARS FUN FACTS -->
+    <h2>5 Fun Facts About The Mars Planet</h2>
+    <p> 1. Mars is known as the Red Planet! Mars gets its reddish color from iron oxide, commonly known as rust, found in its soil and rocks. </p>
+    <p> 2. Mars has the tallest volcano in the Solar System! Olympus Mons is a massive volcano on Mars that stands approximately 22 kilometers (13.6 miles) high, nearly three times taller than Mount Everest. </p>
+    <p> 3. Mars has two tiny moons! Mars has two natural moons called Phobos and Deimos. They are much smaller and more irregularly shaped than Earth's Moon. </p>
+    <p> 4. A day on Mars is similar to Earth's! One day on Mars, called a sol, lasts approximately 24 hours and 37 minutes. </p>
+    <p> 5. Scientists are searching for signs of ancient life on Mars! Scientists have discovered evidence that liquid water once existed on Mars. NASA continues to explore the planet using robotic rovers to study its rocks, soil, and environment. </p>
+</body>
+</html>

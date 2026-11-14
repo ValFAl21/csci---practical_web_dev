@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>The Mercury Planet</title>
+  <link rel="stylesheet" href="the-mercurypage.css">
+  <script src="the-mercury.js" defer></script>
+
+  </head>
+  <body>
+    <h1>Welcome To The Mercury Planet</h1>
+    <a href="solar_mainpage.html">Visit Our Solar System</a>
+    <a href="the-sun.html">Visit The Sun</a>
+    <a href="the-moon.html">Back To The Moon</a>
+    <a href="the-venus.html">Visit The Venus Planet</a>
+    <a href="the-earth.html">Visit The Earth</a>
+    <a href="the-mars.html">Visit The Mars Planet</a>
+    <a href="the-jupiter.html">Visit The Jupiter Planet</a>
+    <a href="the-saturn.html">Visit The Saturn Planet</a>
+    <a href="the-uranus.html">Visit The Uranus Planet</a>
+
+    <button onclick="alert('Boom!');">
+        DO NOT PRESS
+    </button>
+    
+<!-- THE INFORMATION SECTION -->
+<h2>Here Is Some Information About The Mercury Planet</h2>
+<p>Mercury is the closest planet to the Sun and is the smallest planet in our Solar System. It is a rocky planet with a gray, crater-covered surface that looks similar to Earth's Moon. Mercury has almost no atmosphere, which means it cannot hold heat very well. It experiences extremely hot temperatures during the day and freezing temperatures at night. Mercury has no natural moons or rings and takes approximately 88 Earth days to complete one orbit around the Sun. </p>
+
+<!-- MERCURY IMAGES -->
+  <div class="planet-images">
+    <img src="solarpictures/mercury-image1.jpg"
+        alt="Mercury planet viewed from space">
+
+    <img src="solarpictures/mercury-image2.jpg"
+        alt="Mercury's crater-covered rocky surface">
+    </div>
+
+<!-- MERCURY WEIGHT CALCULATOR -->
+<h2> What Would You Weigh on Mercury?</h2>
+<p>Have you ever wondered how much you would weigh on Mercury? Enter your Earth weight below to find out!</p>
+
+<div class="calculator">
+  <label for="earthWeight">Enter your weight on Earth (lbs):</label>
+  <br><br>
+  <input type="number" id="earthWeight" placeholder="Enter your weight" min="0" step="any">
+  <br><br>
+    <button onclick="calculateWeight()">
+        Calculate My Mercury Weight!
+    </button>
+    <h3 id="result"></h3>
+</div>
+    
+    <!-- MERCURY FUN FACTS -->
+    <h2>5 Fun Facts About The Mercury Planet</h2>
+    <p> 1. Mercury is the smallest planet! Mercury is only slightly larger than Earth's Moon. About 18 Mercury-sized planets could fit inside Earth by volume. </p>
+    <p> 2. Mercury has extreme temperatures! During the day, temperatures can reach approximately 430°C (800°F), while nighttime temperatures can drop to around ~180°C (~290°F). </p>
+    <p> 3. A year on Mercury is very short! Mercury takes only 88 Earth days to travel around the Sun, making it the planet with the shortest year. </p>
+    <p> 4. Mercury has ice! Even though Mercury is closest to the Sun, scientists have discovered water ice inside permanently shadowed craters near its north and south poles. </p>
+    <p> 5. Mercury has wrinkles! As Mercury slowly cooled over billions of years, its interior shrank, causing parts of its surface to wrinkle and form large cliffs called lobate scarps. </p>
+</body>
+</html>
